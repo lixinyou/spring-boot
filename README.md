@@ -63,6 +63,37 @@ mvn spring-boot:run
 export MAVEN_OPTS=-Xmx1024m -XX:MaxPermSize=128M
 
 
+五.spring-boot devtools的restart、livedLoad以及VS reload技术
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
