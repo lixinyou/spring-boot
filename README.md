@@ -15,5 +15,6 @@ f.恰到好处的对application.properties和application.yml进行筛选，
 附：
 maven学习笔记
 1.maven中resource的作用:http://jjhpeopl.iteye.com/blog/2325375
-2.maven中依赖的作用域:http://uule.iteye.com/blog/2087485
-3.
+2.maven中依赖的作用域:http://uule.iteye.com/blog/2087485，
+http://elim.iteye.com/blog/2057317
+3.maven依赖中的type概念:http://blog.csdn.net/yao123long/article/details/49925659
