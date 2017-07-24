@@ -24,6 +24,8 @@ public class Example {
   }
 
   public static void main(String[] args) throws Exception {
+    //彻底禁止重启
+//    System.setProperty("spring.devtools.restart.enabled", "false");
     SpringApplication.run(Example.class, args);
   }
 }

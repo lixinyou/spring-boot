@@ -1,4 +1,5 @@
 # spring-boot
+spring-boot中文文档翻译版：https://www.gitbook.com/book/qbgbook/spring-boot-reference-guide-zh/details
 
 一.spring-boot中的maven的精选配置
 1.spring-boot-starter-parent中配置特性
@@ -45,6 +46,24 @@ b.1.3-1.4：java -Xdebug -runjdwp=server=y,transport=dt_socket,address=8000,susp
 2.配置IDEA
 a.增加remote，然后配置remote IP和Port，其中ip是远程服务器，port是remote debug端口，如上：是8000。将本地IDE中的项目增加到remote中
 b.启动remote，打上断点
+
+参考：http://blog.csdn.net/u010136084/article/details/62044423
+
+
+四.spring boot运行方式
+1.在IDE中通其他的java应用程序一样运行或者debug方式启动
+2.利用spring-boot的maven插件打成jar后，直接启动运行，支持remote debug模式启动
+mvn package
+java -jar boot-primary-1.0-SNAPSHOT.jar
+
+
+3.利用spring-boot maven插件的run目标运行，这种方式和IDE运行一样，支持热加载
+mvn spring-boot:run
+注：可以使用操作系统环境变量
+export MAVEN_OPTS=-Xmx1024m -XX:MaxPermSize=128M
+
+
+
 
 
 
