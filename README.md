@@ -37,7 +37,17 @@ b.这样可以隐式指定包搜索路径，在不指定basePackage的情况下�
 但这两个概念没有直接的联系。你可以自由地挑选starters以外的jar依赖，Spring Boot仍会尽最大努力去自动配置你的应用。
 
 
-三.
+三.IDEA与spring-boot结合remote debug
+1.启动spring boot jar
+a.1.5及以后：java -Xdebug -agentlib:jdwp=server=y,transport=dt_socket,address=8000,suspend=n -jar boot-primary-1.0-SNAPSHOT.jar
+b.1.3-1.4：java -Xdebug -runjdwp=server=y,transport=dt_socket,address=8000,suspend=n -jar boot-primary-1.0-SNAPSHOT.jar
+
+2.配置IDEA
+a.增加remote，然后配置remote IP和Port，其中ip是远程服务器，port是remote debug端口，如上：是8000。将本地IDE中的项目增加到remote中
+b.启动remote，打上断点
+
+
+
 
 
 
