@@ -1,6 +1,6 @@
 # spring-boot
 
-spring-boot中的maven的精选配置
+一.spring-boot中的maven的精选配置
 1.spring-boot-starter-parent中配置特性
 a.默认编译级别为Java 1.6
 b.源码编码为UTF-8
@@ -18,3 +18,63 @@ maven学习笔记
 2.maven中依赖的作用域:http://uule.iteye.com/blog/2087485，
 http://elim.iteye.com/blog/2057317
 3.maven依赖中的type概念:http://blog.csdn.net/yao123long/article/details/49925659
+
+二.项目结构命名方式
+1.不推荐使用default package方式
+2.强烈推荐使用root package方式
+a.使用java包命名规范，使用反转域名
+b.这样可以隐式指定包搜索路径，在不指定basePackage的情况下使用@ComponentScan注解
+
+只要将@EnableAutoConfiguration注解在main类上，main类在最顶层包下。
+@SpringBootApplication，@Configuration也可以注解main类
+
+注： 
+@EnableAutoConfiguration注解
+  第二个类级别的注解是@EnableAutoConfiguration，这个注解告诉Spring Boot根据添加的jar依赖猜测你想如何配置Spring。
+由于spring-boot-starter-web添加了Tomcat和Spring MVC，所以auto-configuration将假定你正在开发一个web应用，
+并对Spring进行相应地设置。
+  Starters和Auto-Configuration：Auto-configuration设计成可以跟"Starters"一起很好的使用，
+但这两个概念没有直接的联系。你可以自由地挑选starters以外的jar依赖，Spring Boot仍会尽最大努力去自动配置你的应用。
+
+
+三.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
