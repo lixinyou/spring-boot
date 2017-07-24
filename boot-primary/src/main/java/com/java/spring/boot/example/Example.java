@@ -20,6 +20,7 @@ public class Example {
   @RequestMapping("/")
   String home() {
     exampleService.exampleService();
+    System.out.println("Hello World!");
     return "Hello World!";
   }
 
