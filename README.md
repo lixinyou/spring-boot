@@ -65,7 +65,14 @@ export MAVEN_OPTS=-Xmx1024m -XX:MaxPermSize=128M
 
 五.spring-boot devtools的restart、livedLoad以及VS reload技术
 
+六.spring-boot的特性
+1.SpringApplication
 
+
+
+2.外部化配置
+properties文件，YAML文件，环境变量和命令行参数。springApplication会将所有命令行配置参数（以'--'开头，比如--server.port=9000）转化成一个property，
+并将其添加到Spring Environment中。springApplication会将application.properties转化成一个property，并将其添加到Spring Environment中。
 
 
 

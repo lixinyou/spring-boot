@@ -1,15 +1,25 @@
 package com.java.spring.boot.example.service;
 
+import com.java.spring.boot.example.bean.ExampleBean;
+import com.java.spring.boot.example.bean.ExampleRandom;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service(value = "exampleService")
 public class ExampleService {
 
-  public void exampleService() {
-    System.out.println("example service...");
-    System.out.println("test spring-boot-devtools");
-    System.out.println("test IDEA spring-boot-devtools");
-    System.out.println("test mvn plugins spring-boot-devtools");
+  @Autowired
+  private ExampleBean exampleBean;
+
+  @Autowired
+  private ExampleRandom exampleRandom;
+
+  public void printRandom() {
+    exampleRandom.printRandom();
+  }
+
+  public void printCommandLineArgs() {
+    exampleBean.printCommandLineArgs();
   }
 
 }
