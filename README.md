@@ -76,8 +76,13 @@ properties文件，YAML文件，环境变量和命令行参数。springApplicati
 
 
 
+七.数据源配置
+1.内置的内存数据库h2，hsqldb等配置
 
+2.内嵌数据源配置
 
+3.druid数据源配置
+请查阅druid官方手册：http://github.com/alibaba/druid/
 
 
 

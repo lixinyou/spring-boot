@@ -1,11 +1,10 @@
 package com.java.spring.boot.example.config;
 
-import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
-import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
+import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
+import javax.sql.DataSource;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.http.converter.StringHttpMessageConverter;
 
 @Configuration
 public class BootConfiguration {
@@ -16,4 +15,10 @@ public class BootConfiguration {
 //    HttpMessageConverter<?> another = new FastJsonHttpMessageConverter();
 //    return new HttpMessageConverters(additional, another);
 //  }
+
+  @Bean
+  @ConfigurationProperties("spring.datasource.druid")
+  public DataSource dataSourceTwo(){
+    return DruidDataSourceBuilder.create().build();
+  }
 }

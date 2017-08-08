@@ -26,6 +26,6 @@ public class DataService implements InitializingBean {
 
   @Override
   public void afterPropertiesSet() throws Exception {
-    template.execute(CREATE_TABLE_PERSON);
+//    template.execute(CREATE_TABLE_PERSON);
   }
 }
