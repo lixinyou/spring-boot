@@ -92,6 +92,18 @@ properties文件，YAML文件，环境变量和命令行参数。springApplicati
 
 
 
+参考：
+spring rest/hateoas: https://www.ibm.com/developerworks/cn/java/j-lo-SpringHATEOAS/
+spring boot demo: http://blog.csdn.net/javahighness/article/details/53055149
+
+
+
+
+
+
+
+
+
 
 
 
